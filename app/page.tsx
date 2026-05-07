@@ -1,17 +1,16 @@
 import Image from "next/image";
-import {
-  ArrowRight
-} from 'lucide-react'
+
+import WhislistModal from "@/components/whishlist-modal";
 
 export default function Home() {
   return (
     <main
-      className="relative min-h-screen bg-cover bg-center flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen bg-cover bg-bottom flex items-center justify-center overflow-hidden"
       style={{
         backgroundImage: "url('/hero-bg.png')",
       }}
     >
-      <div className="absolute inset-0 bg-black/15 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-[5px]" />
 
       <div className="absolute top-0 left-0 w-full z-20 flex justify-center pt-8">
         <Image
@@ -19,7 +18,7 @@ export default function Home() {
           alt="Logo"
           width={180}
           height={60}
-          className="drop-shadow-[0_0_25px_rgba(139,92,246,0.35)]"
+          className="w-auto h-4"
         />
       </div>
 
@@ -37,10 +36,7 @@ export default function Home() {
           <p>AI + social + creative to drive fresh, qualified leads.</p>
         </div>
         
-        <button className="mt-14 px-20 py-5 flex items-center justify-center gap-2 rounded-lg bg-violet-800 hover:bg-violet-900 w-sm transition-all duration-300 text-gray-50 font-bold shadow-lg shadow-violet-600/30 cursor-pointer">
-          Whislist
-          <ArrowRight className="ml-2" />
-        </button>
+        <WhislistModal />
       </div>
     </main>
   );
