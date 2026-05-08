@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import WhislistModal from "@/components/whishlist-modal";
+import WhislistModal from "@/components/waitlist-modal";
 
 export default function Home() {
   return (
@@ -24,14 +24,14 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-5xl">
 
-        <h1 className="text-gray-900 lg:text-6xl md:text-6xl text-3xl font-bold tracking-tight leading-[0.95] mt-4">
-          Outbound is broken. We fix it.
+        <h1 className="text-gray-900 lg:text-6xl md:text-5xl text-2xl font-bold tracking-tight leading-[0.95] mt-4">
+          Outbound is broken. We fixed it.
         </h1>
-        <h1 className="text-violet-800 text-2xl lg:text-5xl md:text-5xl font-bold tracking-tight leading-[0.95] mt-4">
+        <h1 className="text-violet-800 text-2xl lg:text-5xl md:text-4xl font-bold tracking-tight leading-[0.95] mt-4">
           Lead Generation, Reimagined.
         </h1>
 
-        <div className="text-gray-500 text-xs lg:text-xl md:text-lg mt-12 leading-relaxed">
+        <div className="text-gray-500 text-xs lg:text-lg md:text-lg mt-12 leading-relaxed">
           <p>Cold calls and emails are dead. Just like your pipeline.</p>
           <p>AI + social + creative to drive fresh, qualified leads.</p>
         </div>

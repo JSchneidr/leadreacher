@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const { email } = body;
 
     const { error } = await supabase
-      .from("whishlist")
+      .from("waitlist")
       .insert([{ email }]);
 
     if (error) {
