@@ -24,8 +24,9 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-5xl">
 
-        <h1 className="text-gray-900 lg:text-6xl md:text-5xl text-2xl font-bold tracking-tight leading-[0.95] mt-4">
-          Outbound is broken. We fixed it.
+        <h1 className="text-gray-900 lg:text-6xl md:text-5xl text-3xl font-bold tracking-tight leading-[0.95] mt-4">
+          Outbound is broken. {" "}
+          <span className="whitespace-nowrap">We fixed it.</span>
         </h1>
         <h1 className="text-violet-800 text-2xl lg:text-5xl md:text-4xl font-bold tracking-tight leading-[0.95] mt-4">
           Lead Generation, Reimagined.
